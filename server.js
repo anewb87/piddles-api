@@ -121,17 +121,17 @@ app.get('/', (request, response) => {
 
 app.get('/api/v1/arch', (request, response) => {
     const arches = app.locals.archesToilets;
-    response.json({arches})
+    response.json(arches)
 });
 
 app.get('/api/v1/brca', (request, response) => {
     const bryce = app.locals.bryceToilets;
-    response.json({ bryce })
+    response.json(bryce)
 });
 
 app.get('/api/v1/cany', (request, response) => {
     const canyon = app.locals.canyonToilets;
-    response.json({ canyon })
+    response.json(canyon)
 });
 
 app.get('/api/v1/care', (request, response) => {
@@ -141,11 +141,11 @@ app.get('/api/v1/care', (request, response) => {
 
 app.get('/api/v1/zion', (request, response) => {
     const zion = app.locals.zionToilets;
-    response.json({ zion })
+    response.json(zion)
 });
 
 
-//OR CAN ALL OF THESE GO INTO ONE CALL LIKE THIS...but I can't get it to work
+//OR CAN ALL OF THESE GO INTO ONE CALL LIKE THIS...but I don't think I want that anymore?
 
 app.get('/api/v1/toilets/:id', (request, response) => {
     const { id } = request.params;
