@@ -23,17 +23,21 @@ app.locals.archesToilets = {
     { id: 10, location: 'Devil\'s Garden Campground', type: 'flush' },
     { id: 11, location: 'Devil\'s Garden Trailhead', type: 'pit' }
     ],
-    image: 'https://i.postimg.cc/y8N3rT9S/arch.png'
+    map: 'https://i.postimg.cc/y8N3rT9S/arch.png'
 }
 
-app.locals.bryceToilets = [
+app.locals.bryceToilets = {
+    toilets: [
     { id: 1, location: 'Visitor Center', type: 'flush' },
     { id: 2, location: 'Farview Point', type: 'pit' },
     { id: 3, location: 'Rainbow Point', type: 'pit' },
     { id: 4, location: 'Mossy Cave Trail', type: 'pit' },
-]
+    ], 
+    map: 'https://i.postimg.cc/kghRrtFY/brca.png'
+}
 
-app.locals.canyonToilets = [
+app.locals.canyonToilets = {
+    toilets: [
     { id: 1, location: 'Island in the Sky Visitor Center', region: 'Island in the Sky', type: 'flush' },
     { id: 2, location: 'Upheaval Dome', region: 'Island in the Sky', type: 'pit' },
     { id: 3, location: 'Mesa Arch', region: 'Island in the Sky', type: 'pit' },
@@ -42,9 +46,12 @@ app.locals.canyonToilets = [
     { id: 6, location: 'The Needles Visitor Center', region: 'The Needles District', type: 'flush' },
     { id: 7, location: 'Elephant Hill', region: 'The Needles District', type: 'pit' },
     { id: 8, location: 'Canyonlands Campground', region: 'The Needles District', type: 'flush' },
-]
+    ],
+    map: 'https://i.postimg.cc/bNpt1Pwg/cany.png'
+}
 
-app.locals.capreefToilets = [
+app.locals.capreefToilets = {
+    toilets: [
     { id: 1, location: 'Visitor Center', type: 'flush' },
     { id: 2, location: 'Chimney Rock Trailhead', type: 'pit' },
     { id: 3, location: 'Rim Overlook Trailhead', type: 'pit' },
@@ -53,16 +60,21 @@ app.locals.capreefToilets = [
     { id: 6, location: 'Grand Wash Road Pullout', type: 'pit' },
     { id: 7, location: 'End of Scenic Drive Road Pullout', type: 'pit' },
     { id: 8, location: 'Capitol Gorge Road Pullout', type: 'pit' },
-]
+    ],
+    map: 'https://i.postimg.cc/prY53GqK/care.png'
+}
 
-app.locals.zionToilets = [
+app.locals.zionToilets = {
+    toilets: [
     { id: 1, location: 'Zion Canyon Visitor Center', type: 'flush' },
     { id: 2, location: 'Zion Human History Museum', type: 'flush' },
     { id: 3, location: 'Zion Lodge', type: 'flush' },
     { id: 4, location: 'The Grotto', type: 'pit' },
     { id: 5, location: 'Weeping Rock', type: 'flush' },
     { id: 6, location: 'Temple of Sinawva', type: 'pit' },
-]
+    ],
+    map: 'https://i.postimg.cc/sDmZcLBr/zion.png'
+}
 
 app.locals.parkToilets = [
     { id: 1, name: 'Arches Toilets', toilets : [ 
