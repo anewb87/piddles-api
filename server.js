@@ -11,27 +11,27 @@ app.locals.title = 'Piddles Info';
 
 app.locals.archesToilets = {
     toilets: [
-    { id: 1, location: 'Visitor Center', type: 'flush' },
-    { id: 2, location: 'Balanced Rock', type: 'pit' },
-    { id: 3, location: 'Double Arch Trailhead', type: 'pit' },
-    { id: 4, location: 'Windows Trailhead', type: 'pit' },
-    { id: 5, location: 'Panorama Point', type: 'pit' },
-    { id: 6, location: 'Wolfe Rach', type: 'flush' },
-    { id: 7, location: 'Delicate Arch Trailhead', type: 'pit' },
-    { id: 8, location: 'Fiery Furnace Viewpoint', type: 'pit' },
-    { id: 9, location: 'Sand Dune Arch', type: 'pit' },
-    { id: 10, location: 'Devil\'s Garden Campground', type: 'flush' },
-    { id: 11, location: 'Devil\'s Garden Trailhead', type: 'pit' }
+    { id: 1, location: 'Devil\'s Garden Trailhead', type: 'pit' },
+    { id: 2, location: 'Devil\'s Garden Campground', type: 'flush' },
+    { id: 3, location: 'Sand Dune Arch', type: 'pit' },
+    { id: 4, location: 'Fiery Furnace Viewpoint', type: 'pit' },
+    { id: 5, location: 'Wolfe Rach', type: 'flush' },
+    { id: 6, location: 'Delicate Arch Trailhead', type: 'pit' },
+    { id: 7, location: 'Panorama Point', type: 'pit' },
+    { id: 8, location: 'Balanced Rock', type: 'pit' },
+    { id: 9, location: 'Double Arch Trailhead', type: 'pit' },
+    { id: 10, location: 'Windows Trailhead', type: 'pit' },
+    { id: 11, location: 'Visitor Center', type: 'flush' }
     ],
     map: 'https://i.postimg.cc/y8N3rT9S/arch.png'
 }
 
 app.locals.bryceToilets = {
     toilets: [
-    { id: 1, location: 'Visitor Center', type: 'flush' },
-    { id: 2, location: 'Farview Point', type: 'pit' },
-    { id: 3, location: 'Rainbow Point', type: 'pit' },
-    { id: 4, location: 'Mossy Cave Trail', type: 'pit' },
+    { id: 1, location: 'Mossy Cave Trail', type: 'pit' },
+    { id: 2, location: 'Visitor Center', type: 'flush' },
+    { id: 3, location: 'Farview Point', type: 'pit' },
+    { id: 4, location: 'Rainbow Point', type: 'pit' }
     ], 
     map: 'https://i.postimg.cc/kghRrtFY/brca.png'
 }
@@ -42,36 +42,37 @@ app.locals.canyonToilets = {
     { id: 2, location: 'Upheaval Dome', region: 'Island in the Sky', type: 'pit' },
     { id: 3, location: 'Mesa Arch', region: 'Island in the Sky', type: 'pit' },
     { id: 4, location: 'Green River Overlook', region: 'Island in the Sky', type: 'pit' },
-    { id: 5, location: 'Grand View Point Overlook', region: 'Island in the Sky', type: 'pit' },
-    { id: 6, location: 'The Needles Visitor Center', region: 'The Needles District', type: 'flush' },
-    { id: 7, location: 'Elephant Hill', region: 'The Needles District', type: 'pit' },
+    { id: 5, location: 'White Rim Overlook', region: 'Island in the Sky', type: 'pit' },
+    { id: 6, location: 'Grand View Point Overlook', region: 'Island in the Sky', type: 'pit' },
+    { id: 7, location: 'The Needles Visitor Center', region: 'The Needles District', type: 'flush' },
     { id: 8, location: 'Canyonlands Campground', region: 'The Needles District', type: 'flush' },
+    { id: 9, location: 'Elephant Hill', region: 'The Needles District', type: 'pit' },
     ],
     map: 'https://i.postimg.cc/bNpt1Pwg/cany.png'
 }
 
 app.locals.capreefToilets = {
     toilets: [
-    { id: 1, location: 'Visitor Center', type: 'flush' },
-    { id: 2, location: 'Chimney Rock Trailhead', type: 'pit' },
-    { id: 3, location: 'Rim Overlook Trailhead', type: 'pit' },
-    { id: 4, location: 'Picnic Area', type: 'pit' },
-    { id: 5, location: 'Amphitheater', type: 'flush' },
+    { id: 1, location: 'Chimney Rock Trailhead', type: 'pit' },
+    { id: 2, location: 'Visitor Center', type: 'flush' },
+    { id: 3, location: 'Picnic Area', type: 'pit' },
+    { id: 4, location: 'Amphitheater', type: 'flush' },
+    { id: 5, location: 'Rim Overlook Trailhead', type: 'pit' },
     { id: 6, location: 'Grand Wash Road Pullout', type: 'pit' },
     { id: 7, location: 'End of Scenic Drive Road Pullout', type: 'pit' },
-    { id: 8, location: 'Capitol Gorge Road Pullout', type: 'pit' },
+    { id: 8, location: 'Capitol Gorge Road Pullout', type: 'pit' }
     ],
     map: 'https://i.postimg.cc/prY53GqK/care.png'
 }
 
 app.locals.zionToilets = {
     toilets: [
-    { id: 1, location: 'Zion Canyon Visitor Center', type: 'flush' },
-    { id: 2, location: 'Zion Human History Museum', type: 'flush' },
-    { id: 3, location: 'Zion Lodge', type: 'flush' },
-    { id: 4, location: 'The Grotto', type: 'pit' },
-    { id: 5, location: 'Weeping Rock', type: 'flush' },
-    { id: 6, location: 'Temple of Sinawva', type: 'pit' },
+    { id: 1, location: 'Temple of Sinawva', type: 'pit' },
+    { id: 2, location: 'Weeping Rock', type: 'flush' },
+    { id: 3, location: 'The Grotto', type: 'pit' },
+    { id: 4, location: 'Zion Lodge', type: 'flush' },
+    { id: 5, location: 'Zion Human History Museum', type: 'flush' },
+    { id: 6, location: 'Zion Canyon Visitor Center', type: 'flush' },
     ],
     map: 'https://i.postimg.cc/sDmZcLBr/zion.png'
 }
