@@ -9,7 +9,8 @@ app.use(cors())
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'Piddles Info';
 
-app.locals.archesToilets = [
+app.locals.archesToilets = {
+    toilets: [
     { id: 1, location: 'Visitor Center', type: 'flush' },
     { id: 2, location: 'Balanced Rock', type: 'pit' },
     { id: 3, location: 'Double Arch Trailhead', type: 'pit' },
@@ -20,8 +21,10 @@ app.locals.archesToilets = [
     { id: 8, location: 'Fiery Furnace Viewpoint', type: 'pit' },
     { id: 9, location: 'Sand Dune Arch', type: 'pit' },
     { id: 10, location: 'Devil\'s Garden Campground', type: 'flush' },
-    { id: 11, location: 'Devil\'s Garden Trailhead', type: 'pit' },
-]
+    { id: 11, location: 'Devil\'s Garden Trailhead', type: 'pit' }
+    ],
+    image: 'https://i.postimg.cc/y8N3rT9S/arch.png'
+}
 
 app.locals.bryceToilets = [
     { id: 1, location: 'Visitor Center', type: 'flush' },
