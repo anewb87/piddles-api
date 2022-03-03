@@ -9,48 +9,48 @@ app.use(cors())
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'Piddles Info';
 
-// app.locals.archesToilets = [
-//     { id: 1, location: 'Visitor Center', type: 'flush' },
-//     { id: 2, location: 'Balanced Rock', type: 'pit' },
-//     { id: 3, location: 'Double Arch Trailhead', type: 'pit' },
-//     { id: 4, location: 'Windows Trailhead', type: 'pit' },
-//     { id: 5, location: 'Panorama Point', type: 'pit' },
-//     { id: 6, location: 'Wolfe Rach', type: 'flush' },
-//     { id: 7, location: 'Delicate Arch Trailhead', type: 'pit' },
-//     { id: 8, location: 'Fiery Furnace Viewpoint', type: 'pit' },
-//     { id: 9, location: 'Sand Dune Arch', type: 'pit' },
-//     { id: 10, location: 'Devil\'s Garden Campground', type: 'flush' },
-//     { id: 11, location: 'Devil\'s Garden Trailhead', type: 'pit' },
-// ]
+app.locals.archesToilets = [
+    { id: 1, location: 'Visitor Center', type: 'flush' },
+    { id: 2, location: 'Balanced Rock', type: 'pit' },
+    { id: 3, location: 'Double Arch Trailhead', type: 'pit' },
+    { id: 4, location: 'Windows Trailhead', type: 'pit' },
+    { id: 5, location: 'Panorama Point', type: 'pit' },
+    { id: 6, location: 'Wolfe Rach', type: 'flush' },
+    { id: 7, location: 'Delicate Arch Trailhead', type: 'pit' },
+    { id: 8, location: 'Fiery Furnace Viewpoint', type: 'pit' },
+    { id: 9, location: 'Sand Dune Arch', type: 'pit' },
+    { id: 10, location: 'Devil\'s Garden Campground', type: 'flush' },
+    { id: 11, location: 'Devil\'s Garden Trailhead', type: 'pit' },
+]
 
-// app.locals.bryceToilets = [
-//     { id: 1, location: 'Visitor Center', type: 'flush' },
-//     { id: 2, location: 'Farview Point', type: 'pit' },
-//     { id: 3, location: 'Rainbow Point', type: 'pit' },
-//     { id: 4, location: 'Mossy Cave Trail', type: 'pit' },
-// ]
+app.locals.bryceToilets = [
+    { id: 1, location: 'Visitor Center', type: 'flush' },
+    { id: 2, location: 'Farview Point', type: 'pit' },
+    { id: 3, location: 'Rainbow Point', type: 'pit' },
+    { id: 4, location: 'Mossy Cave Trail', type: 'pit' },
+]
 
-// app.locals.canyonToilets = [
-//     { id: 1, location: 'Island in the Sky Visitor Center', region: 'Island in the Sky', type: 'flush' },
-//     { id: 2, location: 'Upheaval Dome', region: 'Island in the Sky', type: 'pit' },
-//     { id: 3, location: 'Mesa Arch', region: 'Island in the Sky', type: 'pit' },
-//     { id: 4, location: 'Green River Overlook', region: 'Island in the Sky', type: 'pit' },
-//     { id: 5, location: 'Grand View Point Overlook', region: 'Island in the Sky', type: 'pit' },
-//     { id: 6, location: 'The Needles Visitor Center', region: 'The Needles District', type: 'flush' },
-//     { id: 7, location: 'Elephant Hill', region: 'The Needles District', type: 'pit' },
-//     { id: 8, location: 'Canyonlands Campground', region: 'The Needles District', type: 'flush' },
-// ]
+app.locals.canyonToilets = [
+    { id: 1, location: 'Island in the Sky Visitor Center', region: 'Island in the Sky', type: 'flush' },
+    { id: 2, location: 'Upheaval Dome', region: 'Island in the Sky', type: 'pit' },
+    { id: 3, location: 'Mesa Arch', region: 'Island in the Sky', type: 'pit' },
+    { id: 4, location: 'Green River Overlook', region: 'Island in the Sky', type: 'pit' },
+    { id: 5, location: 'Grand View Point Overlook', region: 'Island in the Sky', type: 'pit' },
+    { id: 6, location: 'The Needles Visitor Center', region: 'The Needles District', type: 'flush' },
+    { id: 7, location: 'Elephant Hill', region: 'The Needles District', type: 'pit' },
+    { id: 8, location: 'Canyonlands Campground', region: 'The Needles District', type: 'flush' },
+]
 
-// app.locals.capreefToilets = [
-//     { id: 1, location: 'Visitor Center', type: 'flush' },
-//     { id: 2, location: 'Chimney Rock Trailhead', type: 'pit' },
-//     { id: 3, location: 'Rim Overlook Trailhead', type: 'pit' },
-//     { id: 4, location: 'Picnic Area', type: 'pit' },
-//     { id: 5, location: 'Amphitheater', type: 'flush' },
-//     { id: 6, location: 'Grand Wash Road Pullout', type: 'pit' },
-//     { id: 7, location: 'End of Scenic Drive Road Pullout', type: 'pit' },
-//     { id: 8, location: 'Capitol Gorge Road Pullout', type: 'pit' },
-// ]
+app.locals.capreefToilets = [
+    { id: 1, location: 'Visitor Center', type: 'flush' },
+    { id: 2, location: 'Chimney Rock Trailhead', type: 'pit' },
+    { id: 3, location: 'Rim Overlook Trailhead', type: 'pit' },
+    { id: 4, location: 'Picnic Area', type: 'pit' },
+    { id: 5, location: 'Amphitheater', type: 'flush' },
+    { id: 6, location: 'Grand Wash Road Pullout', type: 'pit' },
+    { id: 7, location: 'End of Scenic Drive Road Pullout', type: 'pit' },
+    { id: 8, location: 'Capitol Gorge Road Pullout', type: 'pit' },
+]
 
 app.locals.zionToilets = [
     { id: 1, location: 'Zion Canyon Visitor Center', type: 'flush' },
@@ -119,22 +119,22 @@ app.get('/', (request, response) => {
     response.send('If you\'re looking for crappy information, here it is! You\'ve found THE API about Utah\'s National Park toilets.');
 });
 
-app.get('/api/v1/arches', (request, response) => {
+app.get('/api/v1/arch', (request, response) => {
     const arches = app.locals.archesToilets;
     response.json({arches})
 });
 
-app.get('/api/v1/bryce', (request, response) => {
+app.get('/api/v1/brca', (request, response) => {
     const bryce = app.locals.bryceToilets;
     response.json({ bryce })
 });
 
-app.get('/api/v1/canyon', (request, response) => {
+app.get('/api/v1/cany', (request, response) => {
     const canyon = app.locals.canyonToilets;
     response.json({ canyon })
 });
 
-app.get('/api/v1/capreef', (request, response) => {
+app.get('/api/v1/care', (request, response) => {
     const capreef = app.locals.capreefToilets;
     response.json({ capreef })
 });
@@ -170,5 +170,3 @@ app.get('/api/v1/toilets/', (request, response) => {
 app.listen(app.get('port'), () => {
     console.log(`${app.locals.title} is running on http://localhost:${app.get('port')}.`);
 });
-
-//testing
