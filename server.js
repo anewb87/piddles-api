@@ -135,8 +135,8 @@ app.get('/api/v1/cany', (request, response) => {
 });
 
 app.get('/api/v1/care', (request, response) => {
-    // const capreef = app.locals.capreefToilets;
-    response.json(app.locals.capreefToilets)
+    const capreef = app.locals.capreefToilets;
+    response.json(capreef)
 });
 
 app.get('/api/v1/zion', (request, response) => {
