@@ -78,7 +78,7 @@ app.locals.zionToilets = {
 }
 
 app.locals.parkToilets = [
-    { id: 1, name: 'Arches Toilets', toilets : [ 
+    { id: 'arch', name: 'Arches Toilets', toilets : [ 
         { id: 1, location: 'Visitor Center', type: 'flush' },
         { id: 2, location: 'Balanced Rock', type: 'pit' },
         { id: 3, location: 'Double Arch Trailhead', type: 'pit' },
@@ -92,14 +92,14 @@ app.locals.parkToilets = [
         { id: 11, location: 'Devil\'s Garden Trailhead', type: 'pit' }]
     },
 
-    { id: 2, name: 'Bryce Canyon Toilets', toilets : [
+    { id: 'brca', name: 'Bryce Canyon Toilets', toilets : [
         { id: 1, location: 'Visitor Center', type: 'flush' },
         { id: 2, location: 'Farview Point', type: 'pit' },
         { id: 3, location: 'Rainbow Point', type: 'pit' },
         { id: 4, location: 'Mossy Cave Trail', type: 'pit' }]
     },
 
-    { id: 3, name: 'Canyonlands Toilets', toilets : [
+    { id: 'cany', name: 'Canyonlands Toilets', toilets : [
         { id: 1, location: 'Island in the Sky Visitor Center', region: 'Island in the Sky', type: 'flush' },
         { id: 2, location: 'Upheaval Dome', region: 'Island in the Sky', type: 'pit' },
         { id: 3, location: 'Mesa Arch', region: 'Island in the Sky', type: 'pit' },
@@ -110,7 +110,7 @@ app.locals.parkToilets = [
         { id: 8, location: 'Canyonlands Campground', region: 'The Needles District', type: 'flush' }]
     },
 
-    { id: 4, name: 'Capitol Reef Toilets', toilets: [
+    { id: 'care', name: 'Capitol Reef Toilets', toilets: [
         { id: 1, location: 'Visitor Center', type: 'flush' },
         { id: 2, location: 'Chimney Rock Trailhead', type: 'pit' },
         { id: 3, location: 'Rim Overlook Trailhead', type: 'pit' },
@@ -121,7 +121,7 @@ app.locals.parkToilets = [
         { id: 8, location: 'Capitol Gorge Road Pullout', type: 'pit' }]
     },
 
-    { id: 5, name: 'Zion Toilets', toilets: [
+    { id: 'zion', name: 'Zion Toilets', toilets: [
         { id: 1, location: 'Zion Canyon Visitor Center', type: 'flush' },
         { id: 2, location: 'Zion Human History Museum', type: 'flush' },
         { id: 3, location: 'Zion Lodge', type: 'flush' },
@@ -165,8 +165,8 @@ app.get('/api/v1/zion', (request, response) => {
 
 app.get('/api/v1/toilets/:id', (request, response) => {
     const { id } = request.params;
-    const { parkToilets } = app.locals;
-    const findPark = parkToilets.find(park => park.id === parseInt(id))
+    const parkToilets = app.locals.parkToilets;
+    const findPark = parkToilets.find(park => park.id === id)
     
     if(!findPark) {
         return response.status(404).json({
