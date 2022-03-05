@@ -159,9 +159,13 @@ app.get('/api/v1/toilets/:id', (request, response) => {
 
 app.get('/api/v1/toilets/', (request, response) => {
     const toilets = app.locals.parkToilets
-    console.log('label', toilets[0].id)
     response.status(200).json(toilets)
 });
+
+app.get('/api/v1/reviews', (request, response) => {
+    const reviews = app.locals.reviews
+    response.status(200).json(reviews)
+})
 
 app.post('/api/v1/reviews', (request, response) => {
     const { id, location, type } = request.body;
