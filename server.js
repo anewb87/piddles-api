@@ -136,9 +136,27 @@ app.locals.parkToilets = [
     },
 ]
 
+app.locals.reviews = []
+
 app.get('/', (request, response) => {
     response.send('If you\'re looking for crappy information, here it is! You\'ve found THE API about Utah\'s National Park toilets.');
 });
+
+app.post('/', (request, response) => {
+    const { id, location, type } = request.body;
+
+    if(!id || !location || !type) {
+        return response.status(422).json({
+            error: `Expected format {id: <Number>, location: <String>, type: <String>}`
+        })
+    }
+
+    const newRating = {id, location, type};
+    app.locals.reviews = [...app.locals.reviews, newRating];
+    return response.status(201).json(newRating);
+});
+
+// app.delete()
 
 // app.get('/api/v1/arch', (request, response) => {
 //     const arches = app.locals.archesToilets;
