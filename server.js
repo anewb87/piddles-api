@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const { response } = require('express');
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -179,6 +180,27 @@ app.post('/api/v1/reviews', (request, response) => {
     const newRating = { id, location, type };
     app.locals.reviews = [...app.locals.reviews, newRating];
     return response.status(201).json(newRating);
+});
+
+app.delete('/api/v1/revivews', (request, response) => {
+    const reviews = app.locals.reviews
+    const reviewToDelete = reviews.find(review => review.id === id)
+
+    if(!reviewToDelete) {
+        return response.status(404).json({
+            message: `No bike safety status found with an id of ${id}.`
+        })
+    }
+
+    const index = app.locals.reviews.indexOf(reviewToDelete);
+    app.locals.reviews.splice(index, 1);
+
+    response.status(200).json({
+        message: `Bike safety review has been deleted`
+    })
+
+    return app.locals.reviews
+
 });
 
 app.listen(app.get('port'), () => {
