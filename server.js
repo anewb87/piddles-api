@@ -182,9 +182,10 @@ app.post('/api/v1/reviews', (request, response) => {
     return response.status(201).json(newRating);
 });
 
-app.delete('/api/v1/reviews', (request, response) => {
-    const reviews = app.locals.reviews
-    const reviewToDelete = reviews.find(review => review.id === id)
+app.delete('/api/v1/reviews/:id', (request, response) => {
+    const { id } = request.params;
+    const reviews = app.locals.reviews;
+    const reviewToDelete = reviews.find(review => review.id === id);
 
     if(!reviewToDelete) {
         return response.status(404).json({
