@@ -142,19 +142,46 @@ app.get('/', (request, response) => {
     response.send('If you\'re looking for crappy information, here it is! You\'ve found THE API about Utah\'s National Park toilets.');
 });
 
-app.post('/', (request, response) => {
+
+app.get('/api/v1/toilets/:id', (request, response) => {
+    const { id } = request.params;
+    const parkToilets = app.locals.parkToilets;
+    const findPark = parkToilets.find(park => park.id === id)
+    
+    if(!findPark) {
+        return response.status(404).json({
+            message: `Sorry, no park information with id ${id}`
+        });
+    }
+
+    response.status(200).json(findPark)
+});
+
+app.get('/api/v1/toilets/', (request, response) => {
+    const toilets = app.locals.parkToilets
+    console.log('label', toilets[0].id)
+    response.status(200).json(toilets)
+});
+
+app.post('/api/v1/reviews', (request, response) => {
     const { id, location, type } = request.body;
 
-    if(!id || !location || !type) {
+    if (!id || !location || !type) {
         return response.status(422).json({
             error: `Expected format {id: <Number>, location: <String>, type: <String>}`
         })
     }
 
-    const newRating = {id, location, type};
+    const newRating = { id, location, type };
     app.locals.reviews = [...app.locals.reviews, newRating];
     return response.status(201).json(newRating);
 });
+
+app.listen(app.get('port'), () => {
+    console.log(`${app.locals.title} is running on http://localhost:${app.get('port')}.`);
+});
+
+
 
 // app.delete()
 
@@ -182,27 +209,3 @@ app.post('/', (request, response) => {
 //     const zion = app.locals.zionToilets;
 //     response.json(zion)
 // });
-
-app.get('/api/v1/toilets/:id', (request, response) => {
-    const { id } = request.params;
-    const parkToilets = app.locals.parkToilets;
-    const findPark = parkToilets.find(park => park.id === id)
-    
-    if(!findPark) {
-        return response.status(404).json({
-            message: `Sorry, no park information with id ${id}`
-        });
-    }
-
-    response.status(200).json(findPark)
-})
-
-app.get('/api/v1/toilets/', (request, response) => {
-    const toilets = app.locals.parkToilets
-    console.log('label', toilets[0].id)
-    response.status(200).json(toilets)
-})
-
-app.listen(app.get('port'), () => {
-    console.log(`${app.locals.title} is running on http://localhost:${app.get('port')}.`);
-});
