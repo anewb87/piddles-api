@@ -81,59 +81,59 @@ app.locals.title = 'Piddles Info';
 app.locals.parkToilets = [
     {
         id: 'arch', name: 'Arches Toilets', map: 'https://i.postimg.cc/y8N3rT9S/arch.png', toilets : [ 
-        { id: 1, location: 'Visitor Center', type: 'flush' },
-        { id: 2, location: 'Balanced Rock', type: 'pit' },
-        { id: 3, location: 'Double Arch Trailhead', type: 'pit' },
-        { id: 4, location: 'Windows Trailhead', type: 'pit' },
-        { id: 5, location: 'Panorama Point', type: 'pit' },
-        { id: 6, location: 'Wolfe Rach', type: 'flush' },
-        { id: 7, location: 'Delicate Arch Trailhead', type: 'pit' },
-        { id: 8, location: 'Fiery Furnace Viewpoint', type: 'pit' },
-        { id: 9, location: 'Sand Dune Arch', type: 'pit' },
-        { id: 10, location: 'Devil\'s Garden Campground', type: 'flush' },
-        { id: 11, location: 'Devil\'s Garden Trailhead', type: 'pit' }],
+        { id: 1, park: 'Arches', location: 'Visitor Center', type: 'flush' },
+        { id: 2, park: 'Arches', location: 'Balanced Rock', type: 'pit' },
+        { id: 3, park: 'Arches', location: 'Double Arch Trailhead', type: 'pit' },
+        { id: 4, park: 'Arches', location: 'Windows Trailhead', type: 'pit' },
+        { id: 5, park: 'Arches', location: 'Panorama Point', type: 'pit' },
+        { id: 6, park: 'Arches', location: 'Wolfe Rach', type: 'flush' },
+        { id: 7, park: 'Arches', location: 'Delicate Arch Trailhead', type: 'pit' },
+        { id: 8, park: 'Arches', location: 'Fiery Furnace Viewpoint', type: 'pit' },
+        { id: 9, park: 'Arches', location: 'Sand Dune Arch', type: 'pit' },
+        { id: 10, park: 'Arches', location: 'Devil\'s Garden Campground', type: 'flush' },
+        { id: 11, park: 'Arches', location: 'Devil\'s Garden Trailhead', type: 'pit' }],
     },
 
     {
         id: 'brca', name: 'Bryce Canyon Toilets', map: 'https://i.postimg.cc/kghRrtFY/brca.png', toilets : [
-        { id: 1, location: 'Visitor Center', type: 'flush' },
-        { id: 2, location: 'Farview Point', type: 'pit' },
-        { id: 3, location: 'Rainbow Point', type: 'pit' },
-        { id: 4, location: 'Mossy Cave Trail', type: 'pit' }]
+        { id: 1, park: 'Bryce', location: 'Visitor Center', type: 'flush' },
+        { id: 2, park: 'Bryce', location: 'Farview Point', type: 'pit' },
+        { id: 3, park: 'Bryce', location: 'Rainbow Point', type: 'pit' },
+        { id: 4, park: 'Bryce', location: 'Mossy Cave Trail', type: 'pit' }]
     },
 
     {
         id: 'cany', name: 'Canyonlands Toilets', map: 'https://i.postimg.cc/bNpt1Pwg/cany.png', toilets : [
-        { id: 1, location: 'Island in the Sky Visitor Center', region: 'Island in the Sky', type: 'flush' },
-        { id: 2, location: 'Upheaval Dome', region: 'Island in the Sky', type: 'pit' },
-        { id: 3, location: 'Mesa Arch', region: 'Island in the Sky', type: 'pit' },
-        { id: 4, location: 'Green River Overlook', region: 'Island in the Sky', type: 'pit' },
-        { id: 5, location: 'Grand View Point Overlook', region: 'Island in the Sky', type: 'pit' },
-        { id: 6, location: 'The Needles Visitor Center', region: 'The Needles District', type: 'flush' },
-        { id: 7, location: 'Elephant Hill', region: 'The Needles District', type: 'pit' },
-        { id: 8, location: 'Canyonlands Campground', region: 'The Needles District', type: 'flush' }]
+        { id: 1, park: 'Canyonlands', location: 'Island in the Sky Visitor Center', region: 'Island in the Sky', type: 'flush' },
+        { id: 2, park: 'Canyonlands', location: 'Upheaval Dome', region: 'Island in the Sky', type: 'pit' },
+        { id: 3, park: 'Canyonlands', location: 'Mesa Arch', region: 'Island in the Sky', type: 'pit' },
+        { id: 4, park: 'Canyonlands', location: 'Green River Overlook', region: 'Island in the Sky', type: 'pit' },
+        { id: 5, park: 'Canyonlands', location: 'Grand View Point Overlook', region: 'Island in the Sky', type: 'pit' },
+        { id: 6, park: 'Canyonlands', location: 'The Needles Visitor Center', region: 'The Needles District', type: 'flush' },
+        { id: 7, park: 'Canyonlands', location: 'Elephant Hill', region: 'The Needles District', type: 'pit' },
+        { id: 8, park: 'Canyonlands', location: 'Canyonlands Campground', region: 'The Needles District', type: 'flush' }]
     },
 
     {
         id: 'care', name: 'Capitol Reef Toilets', map: 'https://i.postimg.cc/prY53GqK/care.png', toilets: [
-        { id: 1, location: 'Visitor Center', type: 'flush' },
-        { id: 2, location: 'Chimney Rock Trailhead', type: 'pit' },
-        { id: 3, location: 'Rim Overlook Trailhead', type: 'pit' },
-        { id: 4, location: 'Picnic Area', type: 'pit' },
-        { id: 5, location: 'Amphitheater', type: 'flush' },
-        { id: 6, location: 'Grand Wash Road Pullout', type: 'pit' },
-        { id: 7, location: 'End of Scenic Drive Road Pullout', type: 'pit' },
-        { id: 8, location: 'Capitol Gorge Road Pullout', type: 'pit' }]
+        { id: 1, park: 'Capitol Reef', location: 'Visitor Center', type: 'flush' },
+        { id: 2, park: 'Capitol Reef', location: 'Chimney Rock Trailhead', type: 'pit' },
+        { id: 3, park: 'Capitol Reef', location: 'Rim Overlook Trailhead', type: 'pit' },
+        { id: 4, park: 'Capitol Reef', location: 'Picnic Area', type: 'pit' },
+        { id: 5, park: 'Capitol Reef', location: 'Amphitheater', type: 'flush' },
+        { id: 6, park: 'Capitol Reef', location: 'Grand Wash Road Pullout', type: 'pit' },
+        { id: 7, park: 'Capitol Reef', location: 'End of Scenic Drive Road Pullout', type: 'pit' },
+        { id: 8, park: 'Capitol Reef', location: 'Capitol Gorge Road Pullout', type: 'pit' }]
     },
 
     {
         id: 'zion', name: 'Zion Toilets', map: 'https://i.postimg.cc/sDmZcLBr/zion.png', toilets: [
-        { id: 1, location: 'Zion Canyon Visitor Center', type: 'flush' },
-        { id: 2, location: 'Zion Human History Museum', type: 'flush' },
-        { id: 3, location: 'Zion Lodge', type: 'flush' },
-        { id: 4, location: 'The Grotto', type: 'pit' },
-        { id: 5, location: 'Weeping Rock', type: 'flush' },
-        { id: 6, location: 'Temple of Sinawva', type: 'pit' }]
+        { id: 1, park: 'Zion', location: 'Zion Canyon Visitor Center', type: 'flush' },
+        { id: 2, park: 'Zion', location: 'Zion Human History Museum', type: 'flush' },
+        { id: 3, park: 'Zion', location: 'Zion Lodge', type: 'flush' },
+        { id: 4, park: 'Zion', location: 'The Grotto', type: 'pit' },
+        { id: 5, park: 'Zion', location: 'Weeping Rock', type: 'flush' },
+        { id: 6, park: 'Zion', location: 'Temple of Sinawva', type: 'pit' }]
     },
 ]
 
