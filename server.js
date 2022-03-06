@@ -116,9 +116,6 @@ app.post('/api/v1/reviews', (request, response) => {
         return toilet.id === newRating.id
     })
 
-    console.log('found toilet', foundToilet)
-    console.log('newRating', newRating)
-
     if(foundToilet) {
         app.locals.reviews = [...app.locals.reviews, newRating];
         return response.status(201).json(newRating);
