@@ -110,8 +110,15 @@ app.post('/api/v1/reviews', (request, response) => {
     }
 
     const newRating = { id, location, type };
-    app.locals.reviews = [...app.locals.reviews, newRating];
-    return response.status(201).json(newRating);
+
+    if(!app.locals.reviews.includes(newRating)) {
+        app.locals.reviews = [...app.locals.reviews, newRating];
+        return response.status(201).json(newRating);
+    } else {
+        return response.status(404).json({
+            message: 'Toilet already posted.'
+        })
+    }
 });
 
 app.delete('/api/v1/reviews/:id', (request, response) => {
@@ -121,7 +128,7 @@ app.delete('/api/v1/reviews/:id', (request, response) => {
 
     if(!reviewToDelete) {
         return response.status(404).json({
-            message: `No bike safety status found with an id of ${id}.`
+            message: `No safe bathroom for bike found with an id of ${id}.`
         })
     }
 
