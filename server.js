@@ -96,34 +96,34 @@ app.locals.parkToilets = [
 
     {
         id: 'brca', name: 'Bryce Canyon Toilets', map: 'https://i.postimg.cc/kghRrtFY/brca.png', toilets : [
-        { id: 1, park: 'Bryce', location: 'Visitor Center', type: 'flush' },
-        { id: 2, park: 'Bryce', location: 'Farview Point', type: 'pit' },
-        { id: 3, park: 'Bryce', location: 'Rainbow Point', type: 'pit' },
-        { id: 4, park: 'Bryce', location: 'Mossy Cave Trail', type: 'pit' }]
+        { id: 12, park: 'Bryce', location: 'Visitor Center', type: 'flush' },
+        { id: 13, park: 'Bryce', location: 'Farview Point', type: 'pit' },
+        { id: 14, park: 'Bryce', location: 'Rainbow Point', type: 'pit' },
+        { id: 15, park: 'Bryce', location: 'Mossy Cave Trail', type: 'pit' }]
     },
 
     {
         id: 'cany', name: 'Canyonlands Toilets', map: 'https://i.postimg.cc/bNpt1Pwg/cany.png', toilets : [
-        { id: 1, park: 'Canyonlands', location: 'Island in the Sky Visitor Center', region: 'Island in the Sky', type: 'flush' },
-        { id: 2, park: 'Canyonlands', location: 'Upheaval Dome', region: 'Island in the Sky', type: 'pit' },
-        { id: 3, park: 'Canyonlands', location: 'Mesa Arch', region: 'Island in the Sky', type: 'pit' },
-        { id: 4, park: 'Canyonlands', location: 'Green River Overlook', region: 'Island in the Sky', type: 'pit' },
-        { id: 5, park: 'Canyonlands', location: 'Grand View Point Overlook', region: 'Island in the Sky', type: 'pit' },
-        { id: 6, park: 'Canyonlands', location: 'The Needles Visitor Center', region: 'The Needles District', type: 'flush' },
-        { id: 7, park: 'Canyonlands', location: 'Elephant Hill', region: 'The Needles District', type: 'pit' },
-        { id: 8, park: 'Canyonlands', location: 'Canyonlands Campground', region: 'The Needles District', type: 'flush' }]
+        { id: 16, park: 'Canyonlands', location: 'Island in the Sky Visitor Center', region: 'Island in the Sky', type: 'flush' },
+        { id: 17, park: 'Canyonlands', location: 'Upheaval Dome', region: 'Island in the Sky', type: 'pit' },
+        { id: 18, park: 'Canyonlands', location: 'Mesa Arch', region: 'Island in the Sky', type: 'pit' },
+        { id: 19, park: 'Canyonlands', location: 'Green River Overlook', region: 'Island in the Sky', type: 'pit' },
+        { id: 20, park: 'Canyonlands', location: 'Grand View Point Overlook', region: 'Island in the Sky', type: 'pit' },
+        { id: 21, park: 'Canyonlands', location: 'The Needles Visitor Center', region: 'The Needles District', type: 'flush' },
+        { id: 22, park: 'Canyonlands', location: 'Elephant Hill', region: 'The Needles District', type: 'pit' },
+        { id: 23, park: 'Canyonlands', location: 'Canyonlands Campground', region: 'The Needles District', type: 'flush' }]
     },
 
     {
         id: 'care', name: 'Capitol Reef Toilets', map: 'https://i.postimg.cc/prY53GqK/care.png', toilets: [
-        { id: 1, park: 'Capitol Reef', location: 'Visitor Center', type: 'flush' },
-        { id: 2, park: 'Capitol Reef', location: 'Chimney Rock Trailhead', type: 'pit' },
-        { id: 3, park: 'Capitol Reef', location: 'Rim Overlook Trailhead', type: 'pit' },
-        { id: 4, park: 'Capitol Reef', location: 'Picnic Area', type: 'pit' },
-        { id: 5, park: 'Capitol Reef', location: 'Amphitheater', type: 'flush' },
-        { id: 6, park: 'Capitol Reef', location: 'Grand Wash Road Pullout', type: 'pit' },
-        { id: 7, park: 'Capitol Reef', location: 'End of Scenic Drive Road Pullout', type: 'pit' },
-        { id: 8, park: 'Capitol Reef', location: 'Capitol Gorge Road Pullout', type: 'pit' }]
+        { id: 24, park: 'Capitol Reef', location: 'Visitor Center', type: 'flush' },
+        { id: 25, park: 'Capitol Reef', location: 'Chimney Rock Trailhead', type: 'pit' },
+        { id: 26, park: 'Capitol Reef', location: 'Rim Overlook Trailhead', type: 'pit' },
+        { id: 27, park: 'Capitol Reef', location: 'Picnic Area', type: 'pit' },
+        { id: 28, park: 'Capitol Reef', location: 'Amphitheater', type: 'flush' },
+        { id: 29, park: 'Capitol Reef', location: 'Grand Wash Road Pullout', type: 'pit' },
+        { id: 30, park: 'Capitol Reef', location: 'End of Scenic Drive Road Pullout', type: 'pit' },
+        { id: 31, park: 'Capitol Reef', location: 'Capitol Gorge Road Pullout', type: 'pit' }]
     },
 
     {
