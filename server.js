@@ -60,12 +60,12 @@ app.locals.parkToilets = [
 
     {
         id: 'zion', name: 'Zion Toilets', map: 'https://i.postimg.cc/sDmZcLBr/zion.png', toilets: [
-        { id: 1, park: 'Zion', location: 'Zion Canyon Visitor Center', type: 'flush' },
-        { id: 2, park: 'Zion', location: 'Zion Human History Museum', type: 'flush' },
-        { id: 3, park: 'Zion', location: 'Zion Lodge', type: 'flush' },
-        { id: 4, park: 'Zion', location: 'The Grotto', type: 'pit' },
-        { id: 5, park: 'Zion', location: 'Weeping Rock', type: 'flush' },
-        { id: 6, park: 'Zion', location: 'Temple of Sinawva', type: 'pit' }]
+        { id: 32, park: 'Zion', location: 'Zion Canyon Visitor Center', type: 'flush' },
+        { id: 33, park: 'Zion', location: 'Zion Human History Museum', type: 'flush' },
+        { id: 34, park: 'Zion', location: 'Zion Lodge', type: 'flush' },
+        { id: 35, park: 'Zion', location: 'The Grotto', type: 'pit' },
+        { id: 36, park: 'Zion', location: 'Weeping Rock', type: 'flush' },
+        { id: 37, park: 'Zion', location: 'Temple of Sinawva', type: 'pit' }]
     },
 ]
 
