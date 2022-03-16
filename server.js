@@ -111,20 +111,6 @@ app.post('/api/v1/reviews', (request, response) => {
 
     const newRating = { id, location, type };
 
-
-    // const foundToilet = app.locals.reviews.find(toilet => {
-    //     return toilet.id === newRating.id
-    // })
-
-    // if(foundToilet) {
-    //     app.locals.reviews = [...app.locals.reviews, newRating];
-    //     return response.status(201).json(newRating);
-    // } else {
-    //     return response.status(404).json({
-    //         message: 'Toilet already posted.'
-    //     })
-    // }
-
     if(!app.locals.reviews.includes(newRating)) {
         app.locals.reviews = [...app.locals.reviews, newRating];
         return response.status(201).json(newRating);
