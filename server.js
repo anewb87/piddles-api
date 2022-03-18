@@ -13,7 +13,7 @@ app.locals.title = 'Piddles Info';
 app.locals.parkToilets = [
     {
         id: 'arch', name: 'Arches Toilets', map: 'https://i.postimg.cc/y8N3rT9S/arch.png', toilets : [ 
-        { id: 1, park: 'Arches', location: 'Visitor Center', type: 'flush' },
+        { id: 1, park: 'Arches', location: 'Arches Visitor Center', type: 'flush' },
         { id: 2, park: 'Arches', location: 'Balanced Rock', type: 'pit' },
         { id: 3, park: 'Arches', location: 'Double Arch Trailhead', type: 'pit' },
         { id: 4, park: 'Arches', location: 'Windows Trailhead', type: 'pit' },
@@ -28,7 +28,7 @@ app.locals.parkToilets = [
 
     {
         id: 'brca', name: 'Bryce Canyon Toilets', map: 'https://i.postimg.cc/kghRrtFY/brca.png', toilets : [
-        { id: 12, park: 'Bryce', location: 'Visitor Center', type: 'flush' },
+        { id: 12, park: 'Bryce', location: 'Bryce Canyon Visitor Center', type: 'flush' },
         { id: 13, park: 'Bryce', location: 'Farview Point', type: 'pit' },
         { id: 14, park: 'Bryce', location: 'Rainbow Point', type: 'pit' },
         { id: 15, park: 'Bryce', location: 'Mossy Cave Trail', type: 'pit' }]
@@ -48,7 +48,7 @@ app.locals.parkToilets = [
 
     {
         id: 'care', name: 'Capitol Reef Toilets', map: 'https://i.postimg.cc/prY53GqK/care.png', toilets: [
-        { id: 24, park: 'Capitol Reef', location: 'Visitor Center', type: 'flush' },
+        { id: 24, park: 'Capitol Reef', location: 'Capitol Reef Visitor Center', type: 'flush' },
         { id: 25, park: 'Capitol Reef', location: 'Chimney Rock Trailhead', type: 'pit' },
         { id: 26, park: 'Capitol Reef', location: 'Rim Overlook Trailhead', type: 'pit' },
         { id: 27, park: 'Capitol Reef', location: 'Picnic Area', type: 'pit' },
