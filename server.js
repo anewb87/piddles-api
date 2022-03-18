@@ -101,15 +101,15 @@ app.get('/api/v1/reviews', (request, response) => {
 })
 
 app.post('/api/v1/reviews', (request, response) => {
-    const { id, location, type } = request.body;
+    const { id, park, location, type } = request.body;
 
-    if (!id || !location || !type) {
+    if (!id || !park || !location || !type) {
         return response.status(422).json({
-            error: `Expected format {id: <Number>, location: <String>, type: <String>}`
+            error: `Expected format {id: <Number>, park: <String>, location: <String>, type: <String>}`
         })
     }
 
-    const newRating = { id, location, type };
+    const newRating = { id, park, location, type };
 
     if(!app.locals.reviews.includes(newRating)) {
         app.locals.reviews = [...app.locals.reviews, newRating];
